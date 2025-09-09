@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>有限会社アイワン</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta https-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="https://i-one.co.jp/favicon.ico">
+    <meta name="thumbnail" content='/img/thumbnail.png' />
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="css/default3.css" rel="stylesheet" type="text/css">
+    <link href="css/sp.css" rel="stylesheet" media="screen and (max-width:768px)">
+    <link href="css/pc.css" rel="stylesheet" media="screen and (min-width:769px)">
+    <meta property="og:image" content="img/thumbnail.png">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+        </script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+    <script>
+        $(function () {
+            var offsetY = -10;
+            var time = 500;
+            $('a[href^=#]').click(function () {
+                var target = $(this.hash);
+                if (!target.length) return;
+                var targetY = target.offset().top + offsetY;
+                $('html,body').animate({ scrollTop: targetY }, time, 'swing');
+                window.history.pushState(null, null, this.hash);
+                return false;
+            });
+        });
+    </script>
+
+    <script>
+        $(function () {
+            var getHeight = $('.scroll').height();
+            $(window).scroll(function () {
+                var ScrollTop = $(document).scrollTop();
+                var bgPosition = 80 / getHeight * ScrollTop + 10;　// 80←%を動かす値(10%→90%等), 10←初期値
+
+                $('.scroll').css(
+                    { backgroundPositionY: bgPosition + "%" }
+                );
+            });
+        });
+    </script>
+
+</head>
+
+<body id="contact">
+    <header>
+        <div class="head_logo">有限会社アイワン</div>
+        <div class="head_menu">│　<a href="index.html#top">TOP</a>　│　<a href="index.html#con">コンセプト</a>　│　<a
+                href="index.html#pre">プレスリリース</a>　│　<a href="index.html#pro">プロダクト</a>　│　<a
+                href="index.html#com">会社概要</a>　│</div>
+    </header>
+    <div class="main">
+        <form name="contact_form" action="https://i-one.co.jp/confirm.php" method="post">
+            <h2 class="page_title">お問い合わせ</h2>
+            <div id="errorbox"></div>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>お名前<span class="needs">*必須</span></th>
+                        <td><input type="text" name="name" placeholder="例)山田太郎"></td>
+                        <th>会社名(個人の方は無記入)</th>
+                        <td><input type="text" name="company_name" placeholder="例)株式会社○○○○"></td>
+                        <th>部署名(個人の方は無記入)</th>
+                        <td><input type="text" name="deploy" placeholder="例)システム開発部"></td>
+                        <th>E-MAIL（半角英数）<span class="needs">*必須</span></th>
+                        <td><input type="email" name="email" placeholder="例)test@example.com"></td>
+                        <th>電話番号<span class="needs">*必須</span></th>
+                        <td><input type="text" name="tel" placeholder="例)03-1234-5678"></td>
+                        <th>お問い合わせ内容</th>
+                        <td><textarea name="text" rows="6"></textarea></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        <div class="button_area">
+            <button type="button" class="send">次へ</button>
+        </div>
+    </div>
+    <footer>
+        <div class="foot_menu">
+            <ul>
+                <li><a href="index.html#top">TOP</a></li>
+                <li><a href="index.html#con">コンセプト</a></li>
+                <li><a href="index.html#pre">プレスリリース</a></li>
+                <li><a href="index.html#pro">プロダクト</a></li>
+                <li><a href="index.html#com">会社概要</a></li>
+            </ul>
+        </div>
+        <div class="copyright">©Copyright 有限会社アイワン All Right Reserved.</div>
+    </footer>
+    <script>
+        $(function () {
+            $('.send').click(function () {
+                $('#errorbox').text('')
+                let errFlag = false
+                const indiaRegex = /^(0[5-9]0[0-9]{8}|0[1-9][1-9][0-9]{7})$/
+                const emailRegex = /^[A-Za-z0-9]{1}[A-Za-z0-9_.-]*@{1}[A-Za-z0-9_.-]+.[A-Za-z0-9]+$/
+                let name = $('input[name="name"]').val()
+                let company_name = $('input[name="company_name"]').val()
+                let deploy = $('input[name="deploy"]').val()
+                let email = $('input[name="email"]').val()
+                let tel = $('input[name="tel"]').val()
+                let text = $('textarea[name="text"]').val()
+                if (name.length == 0) {
+                    $('#errorbox').append("・名前を入力してください。<br>")
+                }
+                if (tel.length == 0) {
+                    $('#errorbox').append("・電話番号を入力してください。<br>")
+                } else {
+                    if (!tel.match(indiaRegex)) {
+                        $('#errorbox').append("・電話番号の形式が不正です。<br>")
+                    }
+                }
+                if (email.length == 0) {
+                    $('#errorbox').append("・メールアドレスを入力してください。<br>")
+                } else {
+                    if (!email.match(emailRegex)) {
+                        $('#errorbox').append("・メールアドレスの形式が不正です。<br>")
+                    }
+                }
+                if ($('#errorbox').text().length > 0) {
+                    errFlag = true
+                }
+                if (!errFlag) {
+                    //submit
+                    $('form').submit()
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

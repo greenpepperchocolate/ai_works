@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>有限会社アイワン</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta https-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="thumbnail" content='/img/thumbnail.png' />
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!--<link rel="shortcut icon" href="favicon.ico">-->
+    <link href="css/default3.css" rel="stylesheet" type="text/css">
+    <link href="css/sp.css" rel="stylesheet" media="screen and (max-width:768px)">
+    <link href="css/pc.css" rel="stylesheet" media="screen and (min-width:769px)">
+    <meta property="og:image" content="img/thumbnail.png">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://i-one.co.jp/js/slick.min.js"></script>
+
+    <script>
+        $(function () {
+            var offsetY = -10;
+            var time = 500;
+            $('a[href^=#]').click(function () {
+                var target = $(this.hash);
+                if (!target.length) return;
+                var targetY = target.offset().top + offsetY;
+                $('html,body').animate({ scrollTop: targetY }, time, 'swing');
+                window.history.pushState(null, null, this.hash);
+                return false;
+            });
+        });
+    </script>
+
+    <script>
+        $(function () {
+            var getHeight = $('.scroll').height();
+            $(window).scroll(function () {
+                var ScrollTop = $(document).scrollTop();
+                var bgPosition = 80 / getHeight * ScrollTop + 10;　// 80←%を動かす値(10%→90%等), 10←初期値
+
+                $('.scroll').css(
+                    { backgroundPositionY: bgPosition + "%" }
+                );
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <div class="head_logo">有限会社アイワン</div>
+        <div class="head_menu">│　<a href="index.html#top">TOP</a>　│　<a href="index.html#con">コンセプト</a>　│　<a
+                href="index.html#pre">プレスリリース</a>　│　<a href="index.html#pro">プロダクト</a>　│　<a
+                href="index.html#com">会社概要</a>　│</div>
+    </header>
+    <div class="mainv">
+    </div>
+    <section class="sec_main" id="top">
+        <video class="video2" src="img/53634807.mp4" playsinline autoplay muted></video>
+        <!--<div class="content01">
+    <h2>CLOUD ARCHITECTURE</h2>
+    <h3>最新のテクノロジーを駆使した次世代クラウドプラットフォームを構築</h3>
+  </div>-->
+    </section>
+    <section class="sec_con" id="con">
+        <div class="content01">
+            <h2>次世代型クラウドシステム</h2>
+            <p>有限会社アイワンは創業２０年以上（２０２２年現在）創業時からサーバやインフラ、イントラネットの開発を得意として参りました。２０２２年現在、新型コロナウイルスの影響で非対面やVPNが一般的となり、より手軽にストレージや情報共有、コミュニケーションが出来る事が求められています。
+                当社も２０１０年からクラウドサーバ（SaaS,PaaS,IaaS）の提供を行って参りました。
+            </p>
+            <img src="img/graph.png">
+            <p>
+                当社ではAWSの設定や運営代行はもとより、高度な応答性能を有したメモリ常駐型プロセスによるCDNサービスの提供も行っております。
+                ２０２２年４月１日にはVPNを前提としたストレージサービス「どこでもＶＰＮで共有フォルダー携帯スマートフォン」の提供を開始しました。難しい設定も無く、パソコンやスマートフォン（iPhone Android
+                Windowsの区別なく）全てのデバイスやOSにセキュアな状態でストレージサービスを提供します。
+                法人、個人問わず、お気軽にご利用下さい。
+            </p>
+            <!-- ここからコメントです<center class="mt20">
+	    <p><a href="img/rentPC.pdf" target="_blank"><img src="img/rentPC_banner.jpg"></p></a>
+  	  <p class="mt20"><a href="img/CCMS.pdf" target="_blank"><img src="img/CCM_banner.jpg"></a></p>
+  	  <p class="mt20"><a href="img/CCML.pdf" target="_blank"><img src="img/CCML_banner.jpg"></a></p>
+  	  <p class="mt20"><a href="img/VPN.pdf" target="_blank"><img src="img/VPN_banner.jpg"></a></p>
+  	  <p class="mt20"><a href="img/date_up.pdf" target="_blank"><img src="img/dateup_banner.jpg"></a></p>
+	  <p class="mt20"><a href="img/telephone_VPN.pdf" target="_blank"><img src="img/telephone_VPN.jpg"></a></p>
+	  </center>-->
+        </div>
+    </section>
+    <section class="sec_pre scroll" id="pre">
+        <div class="content01">
+            <h2>Press Release</h2>
+            <dl>
+                <dd>2023年7月20日</dd>
+                <dt>事務所を移転しました</dt>
+                <dd>2023年1月</dd>
+                <dt><a href="storage.php.html">「どこでもＶＰＮで共有フォルダー携帯スマートフォン」</a>のサービス提供を再開しました</dt>
+                <dd>2022年5月</dd>
+                <dt>法人向け「どこでもＶＰＮで共有フォルダー携帯スマートフォン」の提供を開始しました</dt>
+                <dd>2022年4月</dd>
+                <dt>ホームページをリニューアルしました</dt>
+                <dd>2022年1月</dd>
+                <dt>新型コロナウイルス蔓延の為１月１日～１月３１日まで電話サポートを休止します</dt>
+                <dd>2021年6月</dd>
+                <dt>新型コロナウイルス蔓延の為７月１日～８月２０日まで電話サポートを中止します（メールサポートは継続しています）</dt>
+            </dl>
+        </div>
+    </section>
+    <section class="sec_pro" id="pro">
+        <div class="content01">
+            <h2>Products</h2>
+            <div class="pro_img_box">
+                <div class="pro_img"><a href="storage.php.html"><img src="img/pro01.jpg"
+                            alt="どこでもＶＰＮで共有フォルダー携帯スマートフォン" /></a></div>
+                <div class="pro_img"><a href="pdf/VPN_04.pdf" target="_blank"><img src="img/pro02.jpg"
+                            alt="VPNストレージサービス" /></a></div>
+                <div class="pro_img"><a href="pdf/covenants.pdf" target="_blank"><img src="img/pro03.jpg"
+                            alt="サーバ利用約款" /></a></div>
+                <!--<div class="pro_img clear"><a href="#"><img src="img/pro04.jpg" alt=""/></a></div>-->
+                <!--<div class="pro_img"><a href="#"><img src="img/pro05.jpg" alt=""/></a></div>-->
+                <!--<div class="pro_img"><a href="#"><img src="img/pro06.jpg" alt=""/></a></div>-->
+            </div>
+            <div class="security">
+                <img src="img/security_action_hitotsuboshi-small_color.png">
+            </div>
+        </div>
+
+    </section>
+    <section class="sec_com" id="com">
+        <div class="content01">
+            <h2>Company Information</h2>
+            <dl>
+                <dd>商号</dd>
+                <dt>有限会社アイワン</dt>
+                <dd>URL</dd>
+                <dt>https://i-one.co.jp/</dt>
+                <dd>設立</dd>
+                <dt>2003年7月3日</dt>
+                <dd>資本金</dd>
+                <dt>100万円</dt>
+                <dd>代表者</dd>
+                <dt>野田　健孫</dt>
+                <dd>所在地</dd>
+                <dt>〒231-0062 神奈川県横浜市中区桜木町1丁目101番地1 クロスゲート7階</dt>
+                <dd>事業内容</dd>
+                <dt>通信機器の貸し出し及び販売<br>
+                    インターネットホームページの制作及び運営<br>
+                    パンフレット、チラシ等各種の印刷物の制作、販売<br>
+                    通話回線や通信回線を利用した動画配信<br>
+                    LAN工事など通信通信機器設置及び施工</dt>
+                <dd>取引銀行</dd>
+                <dt>三井住友銀行　横浜中央支店</dt>
+                <dd>主要取引先</dd>
+                <dt>株式会社ビジョン（東証１部）<br>
+                    昭和化学工業株式会社（東証２部）<br>
+                    株式会社ブレスゲート<br>
+                    株式会社電通テック<br>
+                    株式会社アイワンソリューション<br>
+                    インフラ保守サポート株式会社<br>
+                    ※ 順不同、敬称略</dt>
+                <dd>マップ</dd>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.1595175154794!2d139.63034871525244!3d35.45084508024872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185c5f01732dd3%3A0xaf83a870969f2375!2z5qGc5pyo55S644Ki44Oz44OI44Os44K144Ot44Oz!5e0!3m2!1sja!2sjp!4v1690362736246!5m2!1sja!2sjp"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe><br /><small><a
+                        href="https://goo.gl/maps/3DjoCz3oFNkNikDa8"
+                        style="color: #fff;">大きな地図で見る</a></small><!--
+      <dt class="sponly"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.1595175154794!2d139.63034871525244!3d35.45084508024872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185c5f01732dd3%3A0xaf83a870969f2375!2z5qGc5pyo55S644Ki44Oz44OI44Os44K144Ot44Oz!5e0!3m2!1sja!2sjp!4v1690362300587!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br /><small><a href="https://goo.gl/maps/3DjoCz3oFNkNikDa8" style="color: #fff;">大きな地図で見る</a></small></dt>
+      <dt class="pconly"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3251.2479447305127!2d139.6389955152519!3d35.423887480255104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185cd012de3435%3A0x2e6faf939ed11e71!2z44CSMjMxLTA4NTEg56We5aWI5bed55yM5qiq5rWc5biC5Lit5Yy65bGx5YWD55S677yV5LiB55uu77yS77yS77yTIOWxseaJi-esrO-8k-OCs-ODvOODneODqeOCuQ!5e0!3m2!1sja!2sjp!4v1595203408814!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe><br /><small><a href="https://goo.gl/maps/eKTfrANCMtjNUJNk6" style="color: #fff;">大きな地図で見る</a></small></dt>-->
+            </dl>
+        </div>
+    </section>
+    <footer>
+        <div class="foot_menu">
+            <ul>
+                <li><a href="index.html#top">TOP</a></li>
+                <li><a href="index.html#con">コンセプト</a></li>
+                <li><a href="index.html#pre">プレスリリース</a></li>
+                <li><a href="index.html#pro">プロダクト</a></li>
+                <li><a href="index.html#com">会社概要</a></li>
+            </ul>
+        </div>
+        <div class="copyright">©Copyright 有限会社アイワン All Right Reserved.</div>
+    </footer>
+</body>
+
+</html>
