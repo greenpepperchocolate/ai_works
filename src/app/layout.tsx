@@ -21,6 +21,11 @@ const notoSansJP = Noto_Sans_JP({
 export const metadata: Metadata = {
   title: "AI Works - WEB制作・アプリ開発・業務コンサルティング",
   description: "AI Worksは東京都新宿区を拠点とするWEB制作・アプリケーション開発・業務コンサルティング会社です。最新技術を活用し、お客様のDX推進をサポートします。",
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
