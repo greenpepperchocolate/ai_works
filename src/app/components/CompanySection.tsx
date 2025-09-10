@@ -47,20 +47,20 @@ export default function CompanySection() {
   return (
     <section
       id="company"
-      className="py-20 bg-gradient-to-b from-amber-50 to-amber-100"
+      className="py-20 bg-gradient-to-b from-gray-50 to-gray-200"
     >
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-amber-800 mb-16">
+          <h2 className="text-4xl font-bold text-center text-cyan-400 mb-16">
             Company Information
           </h2>
 
           <div className="max-w-4xl mx-auto">
             <div className="space-y-8">
               {companyInfo.map((info, index) => (
-                <div key={index} className="border-b border-amber-200 pb-4">
+                <div key={index} className="border-b border-gray-300 pb-4">
                   <div className="flex flex-col md:flex-row">
-                    <div className="text-amber-700 font-semibold mb-2 md:mb-0 md:w-32 flex-shrink-0">
+                    <div className="text-gray-700 font-semibold mb-2 md:mb-0 md:w-32 flex-shrink-0">
                       {info.label}
                     </div>
                     <div className="text-gray-700 leading-relaxed whitespace-pre-line flex-1">
@@ -70,9 +70,9 @@ export default function CompanySection() {
                 </div>
               ))}
 
-              <div className="border-b border-amber-200 pb-4">
+              <div className="border-b border-gray-300 pb-4">
                 <div className="flex flex-col md:flex-row">
-                  <div className="text-amber-700 font-semibold mb-2 md:mb-0 md:w-32 flex-shrink-0">
+                  <div className="text-gray-700 font-semibold mb-2 md:mb-0 md:w-32 flex-shrink-0">
                     アクセス
                   </div>
                   <div className="flex-1">
