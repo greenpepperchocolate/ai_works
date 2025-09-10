@@ -23,7 +23,7 @@ export default function Header() {
               className="h-12 w-32 object-cover object-center"
             />
           </div>
-          <nav className="hidden md:flex items-center space-x-1 text-gray-700 text-xs">
+          <nav className="hidden md:flex items-center space-x-1 text-gray-700 text-sm">
             <span>│</span>
             <button
               onClick={() => scrollToSection('top')}
