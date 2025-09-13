@@ -218,7 +218,7 @@ export default function CaseStudiesSection() {
                     5. 共有設定で「リンクを知っている全員が回答可能」に設定
                     6. フォームのURLをここに貼り付け */}
                 <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSf_example_form_id/viewform"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdomlRx5OB3BEA69Mv50ACyysQmFLTglaMAKnNOpgGAIi7e7w/viewform"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors shadow-md hover:shadow-lg inline-flex items-center gap-2"

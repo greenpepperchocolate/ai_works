@@ -25,18 +25,12 @@ export default function CompanySection() {
     },
     {
       label: "事業内容",
-      value: `WEBサイト構築
+      value: `HP・LP制作
         WEBアプリケーション開発
         システム開発・保守運用
         業務コンサルティング・DX推進支援`,
     },
-    {
-      label: "技術領域",
-      value: `React / Vue.js / 
-        Python / Django / FastAPI
-        AWS / Google Cloud Platform / Render / Vercel
-        PostgreSQL / MySQL / Firebase`,
-    },
+
     {
       label: "サービス特徴",
       value: `最新技術を活用したモダンな開発
