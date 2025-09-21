@@ -46,18 +46,7 @@ export default function CaseStudiesSection() {
       category: "モバイルアプリ",
       images: ["/img/位置1.png", "/img/位置2.png"]
     },
-    {
-      image: "/img/アマゾン1.png",
-      title: "ECの商品データ自動取得ツール",
-      description: "指定サイトの商品URLをもとに対象の商品データを自動で取得し、CSVデータに抽出。各ECの商品データを比較・分析をすることが目的となるツールです。",
-      technologies: ["Python", "Streamlit", "Pandas",],
-      results: [
-        "自動で商品や価格情報をデータ化",
-        "商品コードで各ECとの料金比較が可能"
-      ],
-      category: "自動化ツール",
-      images: ["/img/アマゾン1.png", "/img/アマゾン2.png"]
-    },
+
   ];
 
   const getCategoryColor = (category: string) => {

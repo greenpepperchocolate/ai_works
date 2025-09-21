@@ -1,5 +1,7 @@
 'use client'
 
+import Link from 'next/link'
+
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId)
@@ -67,6 +69,15 @@ export default function Footer() {
                 >
                   会社概要
                 </button>
+              </li>
+              <span>│</span>
+              <li>
+                <Link
+                  href="/privacy"
+                  className="px-3 py-1 hover:text-gray-900 transition-colors"
+                >
+                  プライバシーポリシー
+                </Link>
               </li>
               <span>│</span>
             </ul>

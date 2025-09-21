@@ -8,7 +8,7 @@ export default function CompanySection() {
     },
     {
       label: "URL",
-      value: "https://ai-works.co.jp/",
+      value: "https://ai-works.site/",
     },
     {
       label: "設立",
