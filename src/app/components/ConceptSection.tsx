@@ -21,7 +21,7 @@ export default function ConceptSection() {
 
           <div className="space-y-8 text-gray-700 leading-relaxed font-poppins">
             <p className="text-lg font-normal">
-              AI WorksはAIやPythonを使って仕事や趣味を最適化することで、お客様の悩みを解決するために設立しました。最新のテクノロジーを駆使し、お客様のビジネス課題を解決する革新的なソリューションを提供しています。上場企業での豊富な業務改善実務経験をもとに、信頼性が高く効果的なサービスをお届けします。
+              AI WorksはAIを活用したシステムを使って仕事を最適化することで、お客様の悩みを解決するために設立しました。最新のテクノロジーを駆使し、お客様のビジネス課題を解決する革新的なソリューションを提供しています。上場企業での豊富な業務改善実務経験をもとに、信頼性が高く効果的なサービスをお届けします。
             </p>
             <p className="text-lg font-normal">
               WEB制作、WEBアプリケーション開発、そして業務コンサルティングを通じて、お客様のデジタル変革（DX）をトータルサポートいたします。
