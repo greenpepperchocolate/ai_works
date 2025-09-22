@@ -8,7 +8,11 @@ export default function CompanySection() {
     },
     {
       label: "URL",
-      value: "https://ai-works.site/",
+      value: "https://www.ai-works.site/",
+    },
+    {
+      label: "連絡先",
+      value: "aiworks.corporate@gmail.com",
     },
     {
       label: "設立",
@@ -37,7 +41,7 @@ export default function CompanySection() {
       PythonやAIを活用した自動化ツール等の開発`
     },
   ];
-
+ 
   return (
     <section
       id="company"
