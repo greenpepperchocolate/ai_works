@@ -15,7 +15,7 @@ export default function ConceptSection() {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-gray-800 mb-12 font-poppins">
+          <h2 className="text-2xl md:text-4xl font-bold text-center text-gray-800 mb-12 font-poppins">
             WEB・アプリ開発と業務コンサルティング
           </h2>
 

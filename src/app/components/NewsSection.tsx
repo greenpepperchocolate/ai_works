@@ -29,7 +29,7 @@ export default function NewsSection() {
     <section id="news" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-gray-800 mb-4 font-poppins">
+          <h2 className="text-2xl md:text-4xl font-bold text-center text-gray-800 mb-4 font-poppins">
             News & Updates
           </h2>
           <p className="text-center text-gray-600 mb-16 font-poppins">

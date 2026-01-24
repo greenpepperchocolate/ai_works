@@ -49,7 +49,7 @@ export default function CompanySection() {
     >
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-cyan-400 mb-16">
+          <h2 className="text-2xl md:text-4xl font-bold text-center text-cyan-400 mb-16">
             Company Information
           </h2>
 

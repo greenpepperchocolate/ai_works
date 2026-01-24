@@ -66,7 +66,7 @@ export default function CaseStudiesSection() {
     <section id="case-studies" className="py-20 bg-gradient-to-b from-white to-gray-50">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-gray-800 mb-4 font-poppins">
+          <h2 className="text-2xl md:text-4xl font-bold text-center text-gray-800 mb-4 font-poppins">
             開発事例
           </h2>
           <p className="text-center text-gray-600 mb-16 font-poppins">
