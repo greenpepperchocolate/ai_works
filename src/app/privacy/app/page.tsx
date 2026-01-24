@@ -13,7 +13,7 @@ export default function AppPrivacyPolicy() {
           <h1 className="text-3xl font-bold text-gray-900 mb-2 text-center">
             プライバシーポリシー
           </h1>
-          <p className="text-sm text-gray-500 text-center mb-8">最終更新日: 2024年12月17日</p>
+          <p className="text-sm text-gray-500 text-center mb-8">最終更新日: 2026年01月20日</p>
 
           <div className="prose prose-gray max-w-none">
             {/* 総則 */}
